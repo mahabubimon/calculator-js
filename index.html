@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="calculator"
+      class="d-flex align-items-center justify-content-center vh-100"
+    >
+      <form action="" class="rounded p-2">
+        <h1 class="text-info">Calculator</h1>
+        <input
+          id="display"
+          placeholder="0"
+          readonly
+          class="text-end fs-1 fw-bold p-2 rounded w-100"
+        />
+        <div class="rows pt-3">
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="7" />
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="8" />
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="9" />
+          <input onclick="getValue(this.value)" class="btn btn-warning fs-1" type="button" value="+" />
+        </div>
+        <div class="rows pt-2">
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="4" />
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="5" />
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="6" />
+          <input onclick="getValue(this.value)" class="btn btn-warning fs-1" type="button" value="-" />
+        </div>
+        <div class="rows pt-2">
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="1" />
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="2" />
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="3" />
+          <input onclick="getValue(this.value)" class="btn btn-warning fs-1" type="button" value="*" />
+        </div>
+        <div class="rows pt-2">
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="0" />
+          <input onclick="getValue(this.value)" class="btn btn-primary fs-1" type="button" value="00" />
+          <input onclick="getValue(this.value)" class="btn btn-warning fs-1" type="button" value="%" />
+          <input onclick="getValue(this.value)" class="btn btn-warning fs-1" type="button" value="/" />
+        </div>
+        <div class="rows pt-2">
+          <input onclick="getValue(this.value)" id="delete" class="btn btn-dark fs-1" type="button" value="Del" />
+          <input onclick="getValue(this.value)" id="clear" class="btn btn-danger fs-1" type="button" value="C" />
+          <input onclick="getValue(this.value)"
+            id="equal"
+            class="btn btn-warning fs-1"
+            type="button"
+            value="="
+          />
+        </div>
+      </form>
+    </section>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

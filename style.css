@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+form {
+    background-color: white;
+    width: 330px;
+}
+
+.rows input {
+    width: 75px;
+}
+
+#equal {
+    width: 152px;
+} 
