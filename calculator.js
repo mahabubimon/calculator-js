@@ -1,7 +1,3 @@
-window.onbeforeunload = function () {
-  return "Are you sure you want to leave?";
-};
-
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
     this.previousOperandTextElement = previousOperandTextElement;
